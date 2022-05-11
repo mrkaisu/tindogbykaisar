@@ -30,7 +30,7 @@ p{
 }
 
 .container-fluid{
-    padding: 3% 15%;
+    padding: 3% 15% 7%;
 }
 .navbar{
     padding:0 0 4.5rem;
@@ -57,11 +57,16 @@ p{
 .title-image{
     width: 60%;
     transform: rotate(25deg);
+    position: absolute;
+    right: 30%;
 }
 
 
 #features{
     padding: 7% 15%;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
 }
 
 .feature-box{
@@ -108,4 +113,46 @@ p{
 .press-logo{
     width: 15%;
     margin: 20px 20px 50px;
+}
+
+#cta{
+    background-color: #ff4c68;
+    color: #fff;
+    padding: 7% 15%;
+    text-align: center;
+}
+
+.cta-heading{
+    font-family: "Montserrat-Black";
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+#footer{
+    padding: 7% 15%;
+    text-align: center;
+}
+.social-icon{
+    margin: 20px 10px;
+}
+
+#pricing{
+    padding: 100px;
+    text-align: center;
+
+}
+
+.col-pricing{
+    padding: 3% 2%;
+}
+
+
+@media (max-width:1028px){
+    .title-image{
+        position: static;
+        transform: rotate(0);
+    }
+    #title{
+        text-align: center;
+    }
 }
